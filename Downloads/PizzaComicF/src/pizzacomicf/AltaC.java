@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -22,6 +23,12 @@ Statement stmt = null;
    
     public AltaC() {
         initComponents();
+        
+        this.setTitle("ALTA CLIENTE");
+        this.setLocation(220,200);
+        this.setResizable(false);
+        ImageIcon icono = new ImageIcon("C:\\Users\\SoporteTi\\Downloads\\PizzaComicF\\src\\pizzacomicf\\pizza.png");
+        this.setIconImage(icono.getImage());
     }
 
     /**
