@@ -146,14 +146,12 @@ public class MenuA extends javax.swing.JFrame {
                         .addGap(47, 47, 47)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton3)
                             .addComponent(jButton2)
                             .addComponent(jButton1))
                         .addGap(45, 45, 45))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -204,12 +202,16 @@ public class MenuA extends javax.swing.JFrame {
         dispose(); 
       }
         if (seleccionar.equals("Modificacion")) {
-        InicioA ia = new InicioA();
-        ia.setVisible(true);
+        ModificacionC c= new ModificacionC();
+        c.setVisible(true);
         dispose(); 
       }
+        if (seleccionar.equals("Eliminacion")) {
+        EliminacionC e= new EliminacionC();
+        e.setVisible(true);
+        dispose(); 
     }//GEN-LAST:event_jComboBox1ItemStateChanged
-
+  }
     /**
      * @param args the command line arguments
      */
